@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gharana — discover beautiful homes, apartments and properties." />
+  <title>Gharana — Find a place to call home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="announcement">Your next chapter starts at home <span>✦</span> Explore handpicked properties</div>
+  <header class="header" id="top">
+    <a class="brand" href="#top" aria-label="Gharana home"><span class="brand-mark">g.</span><span>gharana<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a class="active" href="#top">Home</a>
+      <a href="#properties">Properties</a>
+      <a href="#about">About us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#contact">List your property <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="eyebrow-line"></span> A BETTER WAY TO FIND HOME</div>
+        <h1>Find a place<br>to <em>call home.</em></h1>
+        <p>Thoughtfully selected homes, apartments and spaces for the life you want to live.</p>
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="#properties">Explore properties <span>↗</span></a>
+          <a class="text-link" href="#about"><span class="play-icon">▶</span> Our story</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong data-count="1200">1,200+</strong><span>Happy families</span></div>
+          <div><strong data-count="850">850+</strong><span>Homes available</span></div>
+          <div><strong>4.9<span class="star">★</span></strong><span>Customer rating</span></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-image-wrap">
+          <img class="hero-image" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=85" alt="Warm modern living room" />
+          <div class="image-shade"></div>
+          <div class="floating-tag"><span class="tag-icon">⌂</span><div><strong>Spaces that feel right</strong><small>Find your kind of home</small></div></div>
+          <div class="image-caption"><span>01 / 03</span><span>Modern living, made simple</span></div>
+        </div>
+        <div class="decor-circle"></div>
+      </div>
+      <div class="hero-bottom-note"><span>⌄</span> SCROLL TO DISCOVER</div>
+    </section>
+
+    <section class="search-section" aria-label="Find a property">
+      <form class="search-panel" id="searchForm">
+        <label class="search-field"><span>I'm looking to</span><select id="purpose"><option value="all">Buy or rent</option><option value="Buy">Buy a property</option><option value="Rent">Rent a property</option></select></label>
+        <label class="search-field"><span>Property type</span><select id="type"><option value="all">Any type</option><option value="Apartment">Apartment</option><option value="Villa">Villa</option><option value="House">House</option></select></label>
+        <label class="search-field"><span>Preferred location</span><input id="location" type="text" placeholder="e.g. Indore, Bhopal" /></label>
+        <button class="search-button" type="submit"><span>⌕</span> Search homes</button>
+      </form>
+    </section>
+
+    <section class="properties section-pad" id="properties">
+      <div class="section-heading reveal">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span> THE COLLECTION</div><h2>Homes worth <em>coming home to.</em></h2></div>
+        <a href="#contact" class="text-link all-link">View all properties <span>↗</span></a>
+      </div>
+      <div class="filter-row reveal">
+        <div class="filters" role="group" aria-label="Filter properties">
+          <button class="filter active" data-filter="all">All homes <span>06</span></button>
+          <button class="filter" data-filter="Buy">For sale</button>
+          <button class="filter" data-filter="Rent">For rent</button>
+        </div>
+        <div class="sort-label">Curated for you <span>✦</span></div>
+      </div>
+      <div class="property-grid" id="propertyGrid">
+        <article class="property-card reveal" data-purpose="Buy" data-type="Villa" data-location="indore">
+          <div class="property-image"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Contemporary villa exterior"><span class="property-badge">FEATURED</span><button class="heart" aria-label="Save property">♡</button></div>
+          <div class="property-info"><div class="property-meta"><span>VILLA · INDORE</span><span class="status-dot">For sale</span></div><h3>The Palm Residence</h3><p class="address">⌖ Nipania, Indore, Madhya Pradesh</p><div class="features"><span>▱ 3 Beds</span><span>▤ 3 Baths</span><span>↔ 2,450 sq.ft.</span></div><div class="property-bottom"><strong>₹1.85 Cr <small> onwards</small></strong><button class="arrow-btn details-btn" data-name="The Palm Residence" data-price="₹1.85 Cr" data-location="Nipania, Indore" data-type="3 BHK Villa">↗</button></div></div>
+        </article>
+        <article class="property-card reveal" data-purpose="Rent" data-type="Apartment" data-location="bhopal">
+          <div class="property-image"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80" alt="Elegant apartment interior"><span class="property-badge badge-light">NEW LISTING</span><button class="heart" aria-label="Save property">♡</button></div>
+          <div class="property-info"><div class="property-meta"><span>APARTMENT · BHOPAL</span><span class="status-dot rent">For rent</span></div><h3>The Olive Apartment</h3><p class="address">⌖ Arera Colony, Bhopal, Madhya Pradesh</p><div class="features"><span>▱ 2 Beds</span><span>▤ 2 Baths</span><span>↔ 1,250 sq.ft.</span></div><div class="property-bottom"><strong>₹28,000 <small>/ month</small></strong><button class="arrow-btn details-btn" data-name="The Olive Apartment" data-price="₹28,000 / month" data-location="Arera Colony, Bhopal" data-type="2 BHK Apartment">↗</button></div></div>
+        </article>
+        <article class="property-card reveal" data-purpose="Buy" data-type="House" data-location="indore">
+          <div class="property-image"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80" alt="Minimal family home"><span class="property-badge">POPULAR</span><button class="heart" aria-label="Save property">♡</button></div>
+          <div class="property-info"><div class="property-meta"><span>HOUSE · INDORE</span><span class="status-dot">For sale</span></div><h3>Courtyard House</h3><p class="address">⌖ Vijay Nagar, Indore, Madhya Pradesh</p><div class="features"><span>▱ 4 Beds</span><span>▤ 3 Baths</span><span>↔ 2,100 sq.ft.</span></div><div class="property-bottom"><strong>₹1.25 Cr <small> onwards</small></strong><button class="arrow-btn details-btn" data-name="Courtyard House" data-price="₹1.25 Cr" data-location="Vijay Nagar, Indore" data-type="4 BHK House">↗</button></div></div>
+        </article>
+        <article class="property-card reveal" data-purpose="Rent" data-type="Apartment" data-location="indore">
+          <div class="property-image"><img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=900&q=80" alt="Bright apartment with balcony"><button class="heart" aria-label="Save property">♡</button></div>
+          <div class="property-info"><div class="property-meta"><span>APARTMENT · INDORE</span><span class="status-dot rent">For rent</span></div><h3>Skyline Studio</h3><p class="address">⌖ Super Corridor, Indore, Madhya Pradesh</p><div class="features"><span>▱ 1 Bed</span><span>▤ 1 Bath</span><span>↔ 780 sq.ft.</span></div><div class="property-bottom"><strong>₹16,500 <small>/ month</small></strong><button class="arrow-btn details-btn" data-name="Skyline Studio" data-price="₹16,500 / month" data-location="Super Corridor, Indore" data-type="1 BHK Apartment">↗</button></div></div>
+        </article>
+        <article class="property-card reveal" data-purpose="Buy" data-type="Villa" data-location="ujjain">
+          <div class="property-image"><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=80" alt="Modern villa surrounded by greenery"><button class="heart" aria-label="Save property">♡</button></div>
+          <div class="property-info"><div class="property-meta"><span>VILLA · UJJAIN</span><span class="status-dot">For sale</span></div><h3>Greenfield Villa</h3><p class="address">⌖ Nanakheda, Ujjain, Madhya Pradesh</p><div class="features"><span>▱ 3 Beds</span><span>▤ 3 Baths</span><span>↔ 1,900 sq.ft.</span></div><div class="property-bottom"><strong>₹92 Lakh <small> onwards</small></strong><button class="arrow-btn details-btn" data-name="Greenfield Villa" data-price="₹92 Lakh" data-location="Nanakheda, Ujjain" data-type="3 BHK Villa">↗</button></div></div>
+        </article>
+        <article class="property-card reveal" data-purpose="Rent" data-type="House" data-location="bhopal">
+          <div class="property-image"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80" alt="Stylish home with warm materials"><button class="heart" aria-label="Save property">♡</button></div>
+          <div class="property-info"><div class="property-meta"><span>HOUSE · BHOPAL</span><span class="status-dot rent">For rent</span></div><h3>Willow Family Home</h3><p class="address">⌖ Kolar Road, Bhopal, Madhya Pradesh</p><div class="features"><span>▱ 3 Beds</span><span>▤ 2 Baths</span><span>↔ 1,650 sq.ft.</span></div><div class="property-bottom"><strong>₹24,000 <small>/ month</small></strong><button class="arrow-btn details-btn" data-name="Willow Family Home" data-price="₹24,000 / month" data-location="Kolar Road, Bhopal" data-type="3 BHK House">↗</button></div></div>
+        </article>
+      </div>
+      <p class="no-results" id="noResults" hidden>No properties match your search. Try another location or filter.</p>
+    </section>
+
+    <section class="about section-pad" id="about">
+      <div class="about-image reveal"><img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=1200&q=85" alt="Sunlit, comfortable living space"><div class="about-note"><span>✦</span><div><strong>More than four walls.</strong><small>A feeling of belonging.</small></div></div></div>
+      <div class="about-copy reveal"><div class="eyebrow"><span class="eyebrow-line"></span> WHY GHARANA</div><h2>Every home has<br>a <em>story to tell.</em></h2><p>Finding a home should feel exciting, not overwhelming. We bring together thoughtfully chosen spaces and clear information, so you can focus on what matters most — your next chapter.</p><div class="benefit-list"><div><span class="benefit-icon">⌂</span><div><strong>Homes with character</strong><p>Handpicked properties with a little something special.</p></div></div><div><span class="benefit-icon">♡</span><div><strong>People-first service</strong><p>Real support from first viewing to final keys.</p></div></div><div><span class="benefit-icon">✓</span><div><strong>Clear, simple process</strong><p>Helpful details and fewer surprises along the way.</p></div></div></div><a href="#contact" class="btn btn-dark">Meet our team <span>↗</span></a></div>
+    </section>
+
+    <section class="quote-section">
+      <div class="quote-mark">“</div><p class="quote-text">We didn't just find a house.<br>We found <em>our happy place.</em></p><div class="quote-person"><div class="avatar">AS</div><div><strong>Aarav & Sanya</strong><span>Found their home in Indore</span></div><div class="quote-stars">★★★★★</div></div>
+    </section>
+
+    <section class="contact section-pad" id="contact">
+      <div class="contact-copy reveal"><div class="eyebrow"><span class="eyebrow-line"></span> LET'S TALK</div><h2>Your next chapter<br>starts <em>right here.</em></h2><p>Tell us what home looks like to you. We'll help you find it.</p><div class="contact-detail"><span>✉</span><div><small>Email us at</small><strong>hello@gharana.example</strong></div></div><div class="contact-detail"><span>⌕</span><div><small>Call our team</small><strong>+91 98765 43210</strong></div></div></div>
+      <form class="contact-form reveal" id="contactForm"><h3>Let's find your place.</h3><p>Share a few details and we'll get in touch.</p><div class="form-row"><label>Your name<input required name="name" placeholder="Full name"></label><label>Phone number<input required name="phone" type="tel" placeholder="+91 00000 00000"></label></div><label>Email address<input required name="email" type="email" placeholder="you@example.com"></label><label>I'm interested in<select name="interest"><option>Buying a property</option><option>Renting a property</option><option>Listing my property</option></select></label><label>Anything else? <textarea name="message" rows="3" placeholder="Tell us a little about your dream home..."></textarea></label><button class="btn btn-dark submit-btn" type="submit">Send enquiry <span>↗</span></button><p class="form-feedback" id="formFeedback" role="status"></p></form>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="footer-top"><a class="brand footer-brand" href="#top"><span class="brand-mark">g.</span><span>gharana<span class="brand-dot">.</span></span></a><p>A little closer to home.</p><a class="back-top" href="#top">Back to top ↑</a></div><div class="footer-bottom"><span>© 2026 Gharana. Demo website template.</span><div><a href="#properties">Properties</a><a href="#about">About</a><a href="#contact">Contact</a></div><span>Made for your next chapter ✦</span></div></footer>
+
+  <div class="modal" id="propertyModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-backdrop"></div><div class="modal-box"><button class="modal-close" aria-label="Close details">×</button><div class="modal-icon">⌂</div><div class="eyebrow"><span class="eyebrow-line"></span> PROPERTY DETAILS</div><h2 id="modalTitle">Property name</h2><p id="modalType"></p><div class="modal-price" id="modalPrice"></div><p id="modalLocation"></p><p class="modal-disclaimer">This is a demo listing. Contact details and prices are sample content and should be replaced with verified information.</p><a href="#contact" class="btn btn-dark modal-contact">Enquire about this home <span>↗</span></a></div></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
